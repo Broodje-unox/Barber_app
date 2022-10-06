@@ -16,4 +16,4 @@ The naval battle of Gibraltar (1607)
 
 Because the negotiations for a truce between the Dutch and the Spaniards had stalled, the Dutch fleet chose once more to take the initiative and seek battle.
 Admiral Jacob van Heemskerck managed to surprise the Spanish fleet in the Bay of Gibraltar, so that they could no longer move. On April 25, 1607, there was a clash at Gibraltar.
-Can you manage to give the final blow to the Spaniards or will you alter history!
+Do you manage to give the final blow to the Spaniards or will you alter history?
