@@ -1,4 +1,4 @@
-# historical_battleships
+# barber_app
 
 Historical Battleships.
 
