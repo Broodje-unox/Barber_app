@@ -1,19 +1,29 @@
 import 'package:flutter/material.dart';
 
-class Header extends StatelessWidget{
+class Header extends StatelessWidget {
+  const Header({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return const Padding(
       padding: EdgeInsets.all(20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Center(
-            child: Text("Login", style: TextStyle(color: Colors.white, fontSize: 40),),
+            child: Text(
+              "Login",
+              style: TextStyle(color: Colors.white, fontSize: 40),
+            ),
           ),
-          SizedBox(height: 10,),
+          SizedBox(
+            height: 10,
+          ),
           Center(
-            child: Text("Barber App or other name", style: TextStyle(color: Colors.white, fontSize: 18),),
+            child: Text(
+              "Barber App or other name",
+              style: TextStyle(color: Colors.white, fontSize: 18),
+            ),
           )
         ],
       ),
