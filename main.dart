@@ -1,5 +1,7 @@
+import 'package:barber_app/Screens/SettingsScreen/settings_page.dart';
 import 'package:flutter/material.dart';
 import 'lib/screens/loginScreen/login_page.dart';
+import 'lib/screens/MainScreen/main_page.dart';
 
 void main() => runApp(const MyApp());
 
@@ -8,9 +10,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const LoginPage(),
+        '/main': (context) => const MainPage(),
+        '/settings': (context) => const SettingsPage(),
+      },
     );
   }
 }
