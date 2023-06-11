@@ -5,24 +5,24 @@ class Header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.all(20),
-      child: Column(
+    return Padding(
+      padding: const EdgeInsets.all(20),
+      child: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Center(
-            child: Text(
+          const Center(
+            child: const Text(
               "Login",
-              style: TextStyle(color: Colors.white, fontSize: 40),
+              style: const TextStyle(color: Colors.white, fontSize: 40),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
-          Center(
-            child: Text(
+          const Center(
+            child: const Text(
               "Barber App or other name",
-              style: TextStyle(color: Colors.white, fontSize: 18),
+              style: const TextStyle(color: Colors.white, fontSize: 18),
             ),
           )
         ],
