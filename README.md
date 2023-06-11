@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Barber_app
 
 ## customer side

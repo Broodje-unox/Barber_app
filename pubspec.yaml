@@ -1,5 +1,5 @@
-name: historical_battleships
-description: cross plattform mobile game
+name: barber_app
+description: client registration app for hairdressers
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
