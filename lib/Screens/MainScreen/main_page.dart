@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'login_button.dart';
-import 'language_button.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+import 'header.dart';
+
+class MainPage extends StatelessWidget {
+  const MainPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,8 +29,7 @@ class HomePage extends StatelessWidget {
                     topLeft: Radius.circular(60),
                     topRight: Radius.circular(60),
                   )),
-            )),
-            const LoginButton(),
+            ))
           ],
         ),
       ),

@@ -1,8 +1,8 @@
-import 'package:barber_app/Screens/MainScreen/main_page.dart';
+import 'package:barber_app/Screens/LoginScreen/login_page.dart';
 import 'package:flutter/material.dart';
 
-class Button extends StatelessWidget {
-  const Button({super.key});
+class LoginButton extends StatelessWidget {
+  const LoginButton({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class Button extends StatelessWidget {
       onPressed: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => const MainPage()),
+          MaterialPageRoute(builder: (context) => const LoginPage()),
         );
       },
     );
