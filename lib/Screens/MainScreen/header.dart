@@ -10,7 +10,6 @@ class Header extends StatelessWidget {
       padding: const EdgeInsets.all(20),
       child: Row(
         children: [
-          const SettingsButton(),
           const Center(
               child: Text(
             "Main Page",
@@ -19,6 +18,7 @@ class Header extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
+          const SettingsButton(),
         ],
       ),
     );
