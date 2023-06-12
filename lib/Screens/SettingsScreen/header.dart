@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'return_button.dart';
 
 class Header extends StatelessWidget {
   const Header({super.key});
@@ -9,6 +10,7 @@ class Header extends StatelessWidget {
       padding: const EdgeInsets.all(20),
       child: Row(
         children: [
+          const ReturnButton(),
           const Center(
               child: Text(
             "Settings Page",
