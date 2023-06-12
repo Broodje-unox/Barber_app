@@ -9,7 +9,7 @@ class Header extends StatelessWidget {
       children: <Widget>[
         // Headline
         Container(
-          child: const Row(
+          child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Center(
