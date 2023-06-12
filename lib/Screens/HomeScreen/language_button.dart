@@ -8,10 +8,11 @@ class Header extends StatelessWidget {
     return Row(
       children: <Widget>[
         // Headline
+        // ignore: avoid_unnecessary_containers
         Container(
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
+            children: const <Widget>[
               Center(
                 child: Text(
                   "Barber App or other name",

@@ -9,16 +9,16 @@ class Header extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(20),
       child: Row(
-        children: [
-          const Center(
+        children: const[
+          Center(
               child: Text(
             "Main Page",
             style: TextStyle(color: Colors.white, fontSize: 40),
           )),
-          const SizedBox(
+          SizedBox(
             height: 10,
           ),
-          const SettingsButton(),
+          SettingsButton(),
         ],
       ),
     );

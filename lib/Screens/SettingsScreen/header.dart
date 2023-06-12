@@ -9,14 +9,14 @@ class Header extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(20),
       child: Row(
-        children: [
-          const ReturnButton(),
-          const Center(
+        children: const[
+          ReturnButton(),
+          Center(
               child: Text(
             "Settings Page",
             style: TextStyle(color: Colors.white, fontSize: 40),
           )),
-          const SizedBox(
+          SizedBox(
             height: 10,
           ),
         ],
