@@ -5,7 +5,9 @@ class Header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Padding(
+      padding: const EdgeInsets.all(20),
+      child: Row(
       children: <Widget>[
         // Headline
         // ignore: avoid_unnecessary_containers
@@ -15,7 +17,7 @@ class Header extends StatelessWidget {
             children: const <Widget>[
               Center(
                 child: Text(
-                  "Barber App or other name",
+                  "Barber App",
                   style: TextStyle(color: Colors.white, fontSize: 40),
                 ),
               )
@@ -26,8 +28,9 @@ class Header extends StatelessWidget {
         // English language button
         Container(
           height: 50,
-          alignment: Alignment.centerRight,
-          margin: const EdgeInsets.symmetric(horizontal: 50),
+          width: 50,
+          
+          margin: const EdgeInsets.symmetric(horizontal: 20),
           decoration: BoxDecoration(
             color: Colors.pink[500],
             borderRadius: BorderRadius.circular(10),
@@ -46,8 +49,9 @@ class Header extends StatelessWidget {
         // Japanese language button
         Container(
           height: 50,
-          alignment: Alignment.centerRight,
-          margin: const EdgeInsets.symmetric(horizontal: 50),
+          width: 50,
+          
+          margin: const EdgeInsets.symmetric(horizontal: 20),
           decoration: BoxDecoration(
             color: Colors.yellow[500],
             borderRadius: BorderRadius.circular(10),
@@ -63,6 +67,7 @@ class Header extends StatelessWidget {
           ),
         ),
       ],
+     ),
     );
   }
 }

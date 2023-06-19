@@ -17,8 +17,10 @@ class HomePage extends StatelessWidget {
         ),
         child: Column(
           children: <Widget>[
-            const SizedBox(
+          // const Expanded(child: TextField()),
+          const SizedBox(
               height: 80,
+              
             ),
             const Header(),
             Expanded(
