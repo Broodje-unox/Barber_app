@@ -19,20 +19,20 @@ class HomePage extends StatelessWidget {
           children: <Widget>[
           // const Expanded(child: TextField()),
           const SizedBox(
-              height: 80,
-              
-            ),
+              height: 80),
             const Header(),
             Expanded(
                 child: Container(
-              decoration: const BoxDecoration(
+                  decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(60),
                     topRight: Radius.circular(60),
-                  )),
-            )),
+                  )),                 
+                )),
+                
             const LoginButton(),
+            
           ],
         ),
       ),

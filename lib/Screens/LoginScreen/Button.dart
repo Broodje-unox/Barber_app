@@ -7,12 +7,7 @@ class Button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      // height: 50,
-      // margin: const EdgeInsets.symmetric(horizontal: 50),
-      // decoration: BoxDecoration(
-      //   color: Colors.cyan[500],
-      //   borderRadius: BorderRadius.circular(10),
-      // ),
+    
       child: const Text(
         "Login",
         style: TextStyle(
