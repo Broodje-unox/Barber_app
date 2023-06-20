@@ -8,14 +8,17 @@ class Header extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(20),
       child: Row(
-      children: <Widget>[
+        // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: <Widget>[
         // Headline
+        
+        const Spacer(flex: 2,), 
         // ignore: avoid_unnecessary_containers
         Container(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            child: Row(
             children: const <Widget>[
               Center(
+                
                 child: Text(
                   "Barber App",
                   style: TextStyle(color: Colors.white, fontSize: 40),
@@ -24,48 +27,38 @@ class Header extends StatelessWidget {
             ],
           ),
         ),
+                  
+        const  SizedBox(
+            height: 5,
+          ),
 
         // English language button
-        Container(
-          height: 50,
-          width: 50,
-          
-          margin: const EdgeInsets.symmetric(horizontal: 20),
-          decoration: BoxDecoration(
-            color: Colors.pink[500],
-            borderRadius: BorderRadius.circular(10),
-          ),
-          child: const Center(
-            child: Text(
-              "EN",
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                  fontWeight: FontWeight.bold),
+        const Spacer(flex: 2,), 
+        Center(
+          child: IconButton(
+            onPressed: () {},
+            icon: Icon(
+            Icons.sort_by_alpha_outlined,
+            color: Colors.white,
+            size: MediaQuery.of(context).size.height * 0.055,
             ),
           ),
         ),
 
         // Japanese language button
-        Container(
-          height: 50,
-          width: 50,
-          
-          margin: const EdgeInsets.symmetric(horizontal: 20),
-          decoration: BoxDecoration(
-            color: Colors.yellow[500],
-            borderRadius: BorderRadius.circular(10),
-          ),
-          child: const Center(
-            child: Text(
-              "JPN",
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                  fontWeight: FontWeight.bold),
+        const Spacer(flex: 1,), 
+        Center(
+          child: IconButton(
+            onPressed: () {},
+            icon: Icon(
+            Icons.language_outlined,
+            color: Colors.white,
+            size: MediaQuery.of(context).size.height * 0.055,
             ),
           ),
-        ),
+       ),
+
+
       ],
      ),
     );
