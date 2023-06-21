@@ -14,6 +14,7 @@ class ButtonWrapper extends StatelessWidget {
         children: <Widget>[
           const SizedBox(
             height: 60,
+            width: double.infinity,
           ),
           Container(
             decoration: BoxDecoration(
@@ -22,6 +23,7 @@ class ButtonWrapper extends StatelessWidget {
           ),
           const SizedBox(
             height: 40,
+            width: double.infinity,
           ),
           const Text(
             "No account yet?",
@@ -29,6 +31,7 @@ class ButtonWrapper extends StatelessWidget {
           ),
           const SizedBox(
             height: 60,
+            width: double.infinity,
           ),
           const LoginButton()
         ],
