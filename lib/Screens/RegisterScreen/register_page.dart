@@ -1,12 +1,9 @@
-import 'dart:io';
-
-import 'package:barber_app/Screens/MainScreen/clickable_image.dart';
 import 'package:flutter/material.dart';
-
 import 'header.dart';
+import 'input_wrapper.dart';
 
-class MainPage extends StatelessWidget {
-  const MainPage({super.key});
+class RegisterPage extends StatelessWidget {
+  const RegisterPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,17 +22,15 @@ class MainPage extends StatelessWidget {
             ),
             const Header(),
             Expanded(
-              child: Container(
-                decoration: const BoxDecoration(
+                child: Container(
+              decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(60),
                     topRight: Radius.circular(60),
-                  ),
-                ),
-                child: const ClickableImage(),
-              ),
-            ),
+                  )),
+              child: const InputWrapper(),
+            ))
           ],
         ),
       ),

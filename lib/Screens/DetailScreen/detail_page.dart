@@ -1,12 +1,11 @@
 import 'dart:io';
 
-import 'package:barber_app/Screens/MainScreen/clickable_image.dart';
 import 'package:flutter/material.dart';
 
 import 'header.dart';
 
-class MainPage extends StatelessWidget {
-  const MainPage({super.key});
+class DetailPage extends StatelessWidget {
+  const DetailPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +32,9 @@ class MainPage extends StatelessWidget {
                     topRight: Radius.circular(60),
                   ),
                 ),
-                child: const ClickableImage(),
+                child: Image.asset(
+                  'images/example.png',
+                ),
               ),
             ),
           ],

@@ -1,8 +1,10 @@
+import 'package:barber_app/Screens/DetailScreen/detail_page.dart';
+import 'package:barber_app/Screens/RegisterScreen/register_page.dart';
 import 'package:barber_app/Screens/SettingsScreen/settings_page.dart';
 import 'package:flutter/material.dart';
-import 'lib/screens/loginScreen/login_page.dart';
-import 'lib/screens/MainScreen/main_page.dart';
-import 'lib/Screens/HomeScreen/home.dart';
+import 'package:barber_app/Screens/loginScreen/login_page.dart';
+import 'package:barber_app/Screens/MainScreen/main_page.dart';
+import 'package:barber_app/Screens/HomeScreen/home.dart';
 
 void main() => runApp(const MyApp());
 
@@ -16,8 +18,10 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const HomePage(),
+        '/register': (context) => const RegisterPage(),
         '/login': (context) => const LoginPage(),
         '/main': (context) => const MainPage(),
+        '/detail': (context) => const DetailPage(),
         '/settings': (context) => const SettingsPage(),
       },
     );

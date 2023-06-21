@@ -1,6 +1,6 @@
-import 'package:barber_app/Screens/DetailScreen/return_button.dart';
-import 'package:barber_app/Screens/SettingsScreen/logout_button.dart';
 import 'package:flutter/material.dart';
+import 'settings_button.dart';
+import 'return_button.dart';
 
 class Header extends StatelessWidget {
   const Header({super.key});
@@ -14,13 +14,13 @@ class Header extends StatelessWidget {
           ReturnButton(),
           Center(
               child: Text(
-            "Settings Page",
+            "Detail Page",
             style: TextStyle(color: Colors.white, fontSize: 40),
           )),
-          LogoutButton(),
           SizedBox(
             height: 10,
           ),
+          SettingsButton(),
         ],
       ),
     );

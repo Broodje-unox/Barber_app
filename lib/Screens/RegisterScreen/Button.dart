@@ -1,4 +1,3 @@
-import 'package:barber_app/Screens/LoginScreen/login_page.dart';
 import 'package:barber_app/Screens/MainScreen/main_page.dart';
 import 'package:flutter/material.dart';
 
@@ -8,6 +7,7 @@ class Button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
+    
       child: const Text(
         "Login",
         style: TextStyle(
