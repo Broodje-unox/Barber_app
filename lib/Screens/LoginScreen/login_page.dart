@@ -23,7 +23,7 @@ class LoginPage extends StatelessWidget {
             const Header(),
             Expanded(
                 child: Container(
-              decoration: const BoxDecoration(
+                  decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(60),
@@ -31,6 +31,7 @@ class LoginPage extends StatelessWidget {
                   )),
               child: const InputWrapper(),
             ))
+            
           ],
         ),
       ),

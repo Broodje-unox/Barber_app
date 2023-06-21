@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'login_button.dart';
+import 'button_wrapper.dart';
 import 'language_button.dart';
 
 class HomePage extends StatelessWidget {
@@ -16,10 +16,10 @@ class HomePage extends StatelessWidget {
               colors: [Colors.cyan, Colors.cyan, Colors.cyan]),
         ),
         child: Column(
-          children: <Widget>[
-          // const Expanded(child: TextField()),
-          const SizedBox(
-              height: 80),
+          children: <Widget>[          
+            const SizedBox(
+              height: 80,
+            ),
             const Header(),
             Expanded(
                 child: Container(
@@ -28,11 +28,10 @@ class HomePage extends StatelessWidget {
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(60),
                     topRight: Radius.circular(60),
-                  )),                 
-                )),
-                
-            const LoginButton(),
-            
+                  )),
+                  child: const ButtonWrapper(),
+            ))
+                     
           ],
         ),
       ),
