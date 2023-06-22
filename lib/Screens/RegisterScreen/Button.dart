@@ -9,15 +9,11 @@ class Button extends StatelessWidget {
     return ElevatedButton(
     
       child: const Text(
-        "Login",
+        "Register",
         style: TextStyle(
             color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold),
       ),
       onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => const MainPage()),
-        );
       },
     );
   }

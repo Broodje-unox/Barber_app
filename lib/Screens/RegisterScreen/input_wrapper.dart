@@ -24,7 +24,7 @@ class InputWrapper extends StatelessWidget {
             height: 40,
           ),
           const Text(
-            "Forgot Password?",
+            "By pressing register you agree to Barber App's User Agreement, Cookies and Policy",
             style: TextStyle(color: Colors.grey),
           ),
           const SizedBox(

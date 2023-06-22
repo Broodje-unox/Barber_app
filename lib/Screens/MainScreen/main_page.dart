@@ -33,8 +33,8 @@ class MainPage extends StatelessWidget {
                       topRight: Radius.circular(60),
                     ),
                   ),
-                  child: const Column(
-                    children: [
+                  child: Column(
+                    children: const [
                       ClickableImage(
                         path: 'images/example.png',
                         date: '2023/06/21',
