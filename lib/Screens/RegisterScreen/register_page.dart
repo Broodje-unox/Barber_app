@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'header.dart';
 import 'input_wrapper.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+class RegisterPage extends StatelessWidget {
+  const RegisterPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class LoginPage extends StatelessWidget {
             const Header(),
             Expanded(
                 child: Container(
-                  decoration: const BoxDecoration(
+              decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(60),
@@ -31,7 +31,6 @@ class LoginPage extends StatelessWidget {
                   )),
               child: const InputWrapper(),
             ))
-            
           ],
         ),
       ),

@@ -10,12 +10,6 @@ class Header extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: const <Widget>[
-          Center(
-            child: Text(
-              "Login",
-              style: TextStyle(color: Colors.white, fontSize: 40),
-            ),
-          ),
           SizedBox(
             height: 10,
           ),

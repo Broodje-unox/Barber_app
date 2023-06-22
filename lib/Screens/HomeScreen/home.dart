@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'header.dart';
-import 'input_wrapper.dart';
+import 'button_wrapper.dart';
+import 'language_button.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class LoginPage extends StatelessWidget {
               colors: [Colors.cyan, Colors.cyan, Colors.cyan]),
         ),
         child: Column(
-          children: <Widget>[
+          children: <Widget>[          
             const SizedBox(
               height: 80,
             ),
@@ -29,9 +29,9 @@ class LoginPage extends StatelessWidget {
                     topLeft: Radius.circular(60),
                     topRight: Radius.circular(60),
                   )),
-              child: const InputWrapper(),
+                  child: const ButtonWrapper(),
             ))
-            
+                     
           ],
         ),
       ),

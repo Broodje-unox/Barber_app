@@ -8,19 +8,7 @@
             "name": "barber_app",
             "request": "launch",
             "type": "dart",
-            "program": "main.dart"
+            "program": "lib/main.dart"
         },
-        {
-            "name": "barber_app (profile mode)",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "barber_app (release mode)",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        }
     ]
 }
