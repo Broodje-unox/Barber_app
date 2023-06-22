@@ -1,8 +1,5 @@
-import 'dart:io';
-
 import 'package:barber_app/Screens/MainScreen/clickable_image.dart';
 import 'package:flutter/material.dart';
-
 import 'header.dart';
 
 class MainPage extends StatelessWidget {
@@ -33,8 +30,8 @@ class MainPage extends StatelessWidget {
                       topRight: Radius.circular(60),
                     ),
                   ),
-                  child: Column(
-                    children: const [
+                  child: const Column(
+                    children: [
                       ClickableImage(
                         path: 'images/example.png',
                         date: '2023/06/21',

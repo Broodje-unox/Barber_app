@@ -1,0 +1,10 @@
+{
+  "appTitle": "barber app",
+  "@appTitle": {
+    "description" : "shows on home page and main page header"
+  },
+  "mainScreen": "Main Menu",
+  "@mainScreen": {
+    "description" : "The main menu of the app"
+  }
+}

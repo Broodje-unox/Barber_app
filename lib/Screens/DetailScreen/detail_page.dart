@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:barber_app/Screens/DetailScreen/entry_information.dart';
 import 'package:flutter/material.dart';
 
