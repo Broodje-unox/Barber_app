@@ -7,22 +7,22 @@ class Header extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(20),
-      child: const Column(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          const Center(
-            child: const Text(
+        children: const <Widget>[
+          Center(
+            child: Text(
               "Login",
-              style: const TextStyle(color: Colors.white, fontSize: 40),
+              style: TextStyle(color: Colors.white, fontSize: 40),
             ),
           ),
-          const SizedBox(
+          SizedBox(
             height: 10,
           ),
-          const Center(
-            child: const Text(
+          Center(
+            child: Text(
               "Barber App or other name",
-              style: const TextStyle(color: Colors.white, fontSize: 18),
+              style: TextStyle(color: Colors.white, fontSize: 18),
             ),
           )
         ],
