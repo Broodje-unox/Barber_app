@@ -1,11 +1,23 @@
 import 'dart:io';
 
+import 'package:barber_app/Screens/DetailScreen/entry_information.dart';
 import 'package:flutter/material.dart';
 
 import 'header.dart';
 
 class DetailPage extends StatelessWidget {
-  const DetailPage({super.key});
+  final String path;
+  final String date;
+  final String price;
+  final String stylist;
+
+  const DetailPage({
+    Key? key,
+    required this.path,
+    required this.date,
+    required this.price,
+    required this.stylist,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -32,8 +44,15 @@ class DetailPage extends StatelessWidget {
                     topRight: Radius.circular(60),
                   ),
                 ),
-                child: Image.asset(
-                  'images/example.png',
+                child: Column(
+                  children: <Widget>[
+                    Image.asset(path),
+                    EntryInformation(
+                      date: date,
+                      price: price,
+                      stylist: stylist,
+                    ),
+                  ],
                 ),
               ),
             ),

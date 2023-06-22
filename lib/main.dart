@@ -21,7 +21,12 @@ class MyApp extends StatelessWidget {
         '/register': (context) => const RegisterPage(),
         '/login': (context) => const LoginPage(),
         '/main': (context) => const MainPage(),
-        '/detail': (context) => const DetailPage(),
+        '/detail': (context) => const DetailPage(
+              path: '',
+              date: '',
+              price: '',
+              stylist: '',
+            ),
         '/settings': (context) => const SettingsPage(),
       },
     );

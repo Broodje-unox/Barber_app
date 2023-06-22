@@ -26,15 +26,29 @@ class MainPage extends StatelessWidget {
             const Header(),
             Expanded(
               child: Container(
-                decoration: const BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(60),
-                    topRight: Radius.circular(60),
+                  decoration: const BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(60),
+                      topRight: Radius.circular(60),
+                    ),
                   ),
-                ),
-                child: const ClickableImage(),
-              ),
+                  child: const Column(
+                    children: [
+                      ClickableImage(
+                        path: 'images/example.png',
+                        date: '2023/06/21',
+                        price: '7000',
+                        stylist: 'M.Tanaka',
+                      ),
+                      ClickableImage(
+                        path: 'images/example_male.jpg',
+                        date: '2019/01/10',
+                        price: '5000',
+                        stylist: 'M.Tanaka',
+                      ),
+                    ],
+                  )),
             ),
           ],
         ),
