@@ -7,10 +7,10 @@ class Header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(20),
+    return const Padding(
+      padding: EdgeInsets.all(20),
       child: Row(
-        children: const [
+        children: [
           ReturnButton(),
           Center(
               child: Text(

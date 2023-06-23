@@ -15,8 +15,8 @@ class Header extends StatelessWidget {
         const Spacer(flex: 2,), 
         // ignore: avoid_unnecessary_containers
         Container(
-            child: Row(
-            children: const <Widget>[
+            child: const Row(
+            children: <Widget>[
               Center(
                 
                 child: Text(
