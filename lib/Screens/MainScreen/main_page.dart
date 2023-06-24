@@ -33,13 +33,13 @@ class MainPage extends StatelessWidget {
                   child: const Column(
                     children: [
                       ClickableImage(
-                        path: 'images/example.png',
+                        path: 'assets/images/example.png',
                         date: '2023/06/21',
                         price: '7000',
                         stylist: 'M.Tanaka',
                       ),
                       ClickableImage(
-                        path: 'images/example_male.jpg',
+                        path: 'assets/images/example_male.jpg',
                         date: '2019/01/10',
                         price: '5000',
                         stylist: 'M.Tanaka',
