@@ -15,8 +15,8 @@ class Header extends StatelessWidget {
           ),
           Center(
             child: Text(
-              "Barber App or other name",
-              style: TextStyle(color: Colors.white, fontSize: 18),
+              "Sign Up",
+              style: TextStyle(color: Colors.white, fontSize: 40),
             ),
           )
         ],
