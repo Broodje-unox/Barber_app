@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'settings_button.dart';
+import 'package:barber_app/Common/settings_button.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class Header extends StatefulWidget {
@@ -15,15 +15,13 @@ class _HeaderState extends State<Header> {
     return Padding(
       padding: const EdgeInsets.all(20),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Center(
             child: Text(
               AppLocalizations.of(context)!.mainScreen,
               style: const TextStyle(color: Colors.white, fontSize: 40),
             ),
-          ),
-          const SizedBox(
-            height: 10,
           ),
           const SettingsButton(),
         ],

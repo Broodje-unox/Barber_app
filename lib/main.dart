@@ -24,12 +24,7 @@ class MyApp extends StatelessWidget {
         '/register': (context) => const RegisterPage(),
         '/login': (context) => const LoginPage(),
         '/main': (context) => const MainPage(),
-        '/detail': (context) => const DetailPage(
-              path: '',
-              date: '',
-              price: '',
-              stylist: '',
-            ),
+        DetailPage.routeName: (context) => const DetailPage(),
         '/settings': (context) => const SettingsPage(),
       },
       // support multiple languages

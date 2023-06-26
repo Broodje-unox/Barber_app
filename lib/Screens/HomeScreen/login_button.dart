@@ -1,4 +1,3 @@
-import 'package:barber_app/Screens/LoginScreen/login_page.dart';
 import 'package:flutter/material.dart';
 
 class LoginButton extends StatelessWidget {
@@ -20,10 +19,7 @@ class LoginButton extends StatelessWidget {
             color: Colors.white, fontSize: 35, fontWeight: FontWeight.bold),
       ),
       onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => const LoginPage()),
-        );
+        Navigator.pushNamed(context, '/login');
       },
     );
   }

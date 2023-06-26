@@ -5,16 +5,12 @@ class LogoutButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
+    return IconButton(
+      icon: const Icon(Icons.logout, color: Colors.white),
       onPressed: () {
         // TBD, this currently does not work, we need to overhaul routing
         Navigator.popUntil(context, ModalRoute.withName('/login'));
       },
-      child: const Text(
-        "Logout",
-        style: TextStyle(
-            color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold),
-      ),
     );
   }
 }

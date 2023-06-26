@@ -5,15 +5,11 @@ class ReturnButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
+    return IconButton(
+      icon: const Icon(Icons.arrow_back, color: Colors.white),
       onPressed: () {
         Navigator.pop(context);
       },
-      child: const Text(
-        "Return",
-        style: TextStyle(
-            color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold),
-      ),
     );
   }
 }

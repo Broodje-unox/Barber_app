@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'settings_button.dart';
-import 'return_button.dart';
+import 'package:barber_app/Common/settings_button.dart';
+import 'package:barber_app/Common/return_button.dart';
 
 class Header extends StatelessWidget {
   const Header({super.key});
@@ -10,6 +10,7 @@ class Header extends StatelessWidget {
     return const Padding(
       padding: EdgeInsets.all(20),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           ReturnButton(),
           Center(

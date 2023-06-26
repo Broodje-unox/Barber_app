@@ -19,19 +19,16 @@ class ClickableImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(
+        Navigator.pushNamed(
           context,
-          MaterialPageRoute(
-              builder: (context) => DetailPage(
-                    path: path,
-                    date: date,
-                    price: price,
-                    stylist: stylist,
-                  )),
+          DetailPage.routeName,
+          arguments: ScreenArguments(path, date, price, stylist),
         );
       },
-      child: Image.asset(
-        path,
+      child: Expanded(
+        child: Image.asset(
+          path,
+        ),
       ),
     );
   }

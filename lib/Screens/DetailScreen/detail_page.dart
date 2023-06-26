@@ -3,22 +3,24 @@ import 'package:flutter/material.dart';
 
 import 'header.dart';
 
-class DetailPage extends StatelessWidget {
+class ScreenArguments {
   final String path;
   final String date;
   final String price;
   final String stylist;
 
-  const DetailPage({
-    Key? key,
-    required this.path,
-    required this.date,
-    required this.price,
-    required this.stylist,
-  }) : super(key: key);
+  ScreenArguments(this.path, this.date, this.price, this.stylist);
+}
+
+class DetailPage extends StatelessWidget {
+  static const routeName = '/detail';
+
+  const DetailPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final args = ModalRoute.of(context)!.settings.arguments as ScreenArguments;
+
     return Scaffold(
       body: Container(
         width: double.infinity,
@@ -35,6 +37,7 @@ class DetailPage extends StatelessWidget {
             const Header(),
             Expanded(
               child: Container(
+                padding: const EdgeInsets.all(20),
                 decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
@@ -44,11 +47,16 @@ class DetailPage extends StatelessWidget {
                 ),
                 child: Column(
                   children: <Widget>[
-                    Image.asset(path),
+                    Expanded(
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(60),
+                        child: Image.asset(args.path),
+                      ),
+                    ),
                     EntryInformation(
-                      date: date,
-                      price: price,
-                      stylist: stylist,
+                      date: args.date,
+                      price: args.price,
+                      stylist: args.stylist,
                     ),
                   ],
                 ),

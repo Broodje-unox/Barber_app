@@ -1,4 +1,3 @@
-import 'package:barber_app/Screens/RegisterScreen/register_page.dart';
 import 'package:flutter/material.dart';
 
 class RegisterButton extends StatelessWidget {
@@ -20,10 +19,7 @@ class RegisterButton extends StatelessWidget {
             color: Colors.white, fontSize: 35, fontWeight: FontWeight.bold),
       ),
       onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => const RegisterPage()),
-        );
+        Navigator.pushNamed(context, '/register');
       },
     );
   }
