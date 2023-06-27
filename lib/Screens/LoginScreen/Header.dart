@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:barber_app/Common/return_button.dart';
 
 class Header extends StatelessWidget {
   const Header({super.key});
@@ -9,7 +10,8 @@ class Header extends StatelessWidget {
       padding: EdgeInsets.all(20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
+        children: [
+          ReturnButton(),
           Center(
             child: Text(
               "Login",
@@ -24,7 +26,7 @@ class Header extends StatelessWidget {
               "Barber App or other name",
               style: TextStyle(color: Colors.white, fontSize: 18),
             ),
-          )
+          ),
         ],
       ),
     );

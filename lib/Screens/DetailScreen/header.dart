@@ -18,9 +18,6 @@ class Header extends StatelessWidget {
             "Detail Page",
             style: TextStyle(color: Colors.white, fontSize: 40),
           )),
-          SizedBox(
-            height: 10,
-          ),
           SettingsButton(),
         ],
       ),
