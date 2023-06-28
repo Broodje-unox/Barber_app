@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'header.dart';
+import 'settings_ui.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key});
@@ -27,10 +28,11 @@ class SettingsPage extends StatelessWidget {
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(60),
                     topRight: Radius.circular(60),
-                  )),
-            ))
+              )),
+              child: const SettingsUi(),
+            )),         
           ],
-        ),
+        ),  
       ),
     );
   }
