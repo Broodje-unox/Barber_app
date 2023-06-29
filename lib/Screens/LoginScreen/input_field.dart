@@ -21,7 +21,7 @@ class InputField extends StatelessWidget {
         Container(
           padding: const EdgeInsets.all(10),
           decoration: const BoxDecoration(
-              border: Border(bottom: BorderSide(color: Colors.grey))),
+            border: Border(bottom: BorderSide(color: Colors.grey))),
           child: const TextField(
             decoration: InputDecoration(
                 hintText: "Enter your password",

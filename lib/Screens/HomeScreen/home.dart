@@ -30,8 +30,7 @@ class HomePage extends StatelessWidget {
                     topRight: Radius.circular(60),
                   )),
                   child: const ButtonWrapper(),
-            ))
-                     
+            )),                     
           ],
         ),
       ),

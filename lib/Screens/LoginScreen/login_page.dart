@@ -12,8 +12,8 @@ class LoginPage extends StatelessWidget {
         width: double.infinity,
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-              begin: Alignment.topCenter,
-              colors: [Colors.cyan, Colors.cyan, Colors.cyan]),
+            begin: Alignment.topCenter,
+            colors: [Colors.cyan, Colors.cyan, Colors.cyan]),
         ),
         child: Column(
           children: <Widget>[
@@ -30,8 +30,7 @@ class LoginPage extends StatelessWidget {
                     topRight: Radius.circular(60),
                   )),
               child: const InputWrapper(),
-            ))
-            
+            )),            
           ],
         ),
       ),
