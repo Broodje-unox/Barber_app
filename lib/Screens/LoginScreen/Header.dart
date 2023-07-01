@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:barber_app/Common/return_button.dart';
+import 'package:barber_app/Common/settings_button.dart';
 
 class Header extends StatelessWidget {
   const Header({super.key});
@@ -8,8 +9,8 @@ class Header extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Padding(
       padding: EdgeInsets.all(20),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           ReturnButton(),
           Center(
@@ -18,15 +19,7 @@ class Header extends StatelessWidget {
               style: TextStyle(color: Colors.white, fontSize: 40),
             ),
           ),
-          SizedBox(
-            height: 10,
-          ),
-          Center(
-            child: Text(
-              "Barber App or other name",
-              style: TextStyle(color: Colors.white, fontSize: 18),
-            ),
-          ),
+          SettingsButton(),
         ],
       ),
     );
