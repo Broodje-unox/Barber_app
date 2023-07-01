@@ -16,7 +16,7 @@ class Header extends StatelessWidget {
           Center(
             child: Text(
               "Settings Page",
-              style: TextStyle(color: Colors.white, fontSize: 40),
+              style: TextStyle(color: Colors.white, fontSize: 30),
             ),
           ),
           LogoutButton(),
