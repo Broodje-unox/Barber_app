@@ -7,19 +7,19 @@ class Header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
+    return Padding(
       padding: EdgeInsets.all(20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
+        children: const [
           ReturnButton(),
-           Center(             
+          Center(
             child: Text(
               "Sign Up",
               style: TextStyle(color: Colors.white, fontSize: 40),
             ),
           ),
-         SettingsButton(),
+          SettingsButton(),
         ],
       ),
     );

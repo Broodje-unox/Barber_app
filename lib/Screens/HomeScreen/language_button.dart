@@ -5,15 +5,16 @@ class Header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.all(20),
+    return Padding(
+      padding: const EdgeInsets.all(20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: <Widget>[
+        children: const <Widget>[
           Center(
             child: Text(
-              "Barber App", style: TextStyle(color: Colors.white, fontSize: 40),
+              "Barber App",
+              style: TextStyle(color: Colors.white, fontSize: 40),
             ),
           )
         ],
