@@ -27,10 +27,8 @@ class ClickableImage extends StatelessWidget {
       },
       child: ClipRRect(
         borderRadius: BorderRadius.circular(60),
-        child: Expanded(
-          child: Image.asset(
-            path,
-          ),
+        child: Image.asset(
+          path,
         ),
       ),
     );
