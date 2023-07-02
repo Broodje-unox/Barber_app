@@ -32,7 +32,7 @@ class DetailPage extends StatelessWidget {
         child: Column(
           children: <Widget>[
             const SizedBox(
-              height: 10,
+              height: 80,
             ),
             const Header(),
             Expanded(

@@ -82,6 +82,18 @@ class MainPage extends StatelessWidget {
                       price: '5000',
                       stylist: 'M.Tanaka',
                     ),
+                    ClickableImage(
+                      path: 'assets/images/demo9.png',
+                      date: '2019/01/10',
+                      price: '5000',
+                      stylist: 'M.Tanaka',
+                    ),
+                    ClickableImage(
+                      path: 'assets/images/demo10.png',
+                      date: '2019/01/10',
+                      price: '5000',
+                      stylist: 'M.Tanaka',
+                    ),
                   ],
                 ),
               ),

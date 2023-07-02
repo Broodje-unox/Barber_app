@@ -74,6 +74,8 @@ flutter:
     - assets/images/demo6.png
     - assets/images/demo7.png
     - assets/images/demo8.png
+    - assets/images/demo9.png
+    - assets/images/demo10.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -25,9 +25,12 @@ class ClickableImage extends StatelessWidget {
           arguments: ScreenArguments(path, date, price, stylist),
         );
       },
-      child: Expanded(
-        child: Image.asset(
-          path,
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(60),
+        child: Expanded(
+          child: Image.asset(
+            path,
+          ),
         ),
       ),
     );
