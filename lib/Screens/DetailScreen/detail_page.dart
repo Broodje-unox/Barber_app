@@ -48,11 +48,9 @@ class DetailPage extends StatelessWidget {
                 ),
                 child: Column(
                   children: <Widget>[
-                    Expanded(
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(60),
-                        child: Image.asset(args.path),
-                      ),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(60),
+                      child: Image.asset(args.path),
                     ),
                     EntryInformation(
                       date: args.date,
