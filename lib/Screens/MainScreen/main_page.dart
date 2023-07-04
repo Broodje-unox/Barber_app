@@ -15,6 +15,13 @@ class MainPage extends StatelessWidget {
               begin: Alignment.topCenter,
               colors: [Colors.cyan, Colors.cyan, Colors.cyan]),
         ),
+        child: Column(
+          children: <Widget>[
+            const SizedBox(
+              height: 40,
+            ),
+            const Header(),
+            Expanded(
         child: Container(
           decoration: const BoxDecoration(
             color: Colors.white,
@@ -23,10 +30,8 @@ class MainPage extends StatelessWidget {
               topRight: Radius.circular(60),
             ),
           ),
-          child: Column(
-            children: <Widget>[
-              const Header(),
-              Expanded(
+                    
+            
                 child: GridView.count(
                   primary: false,
                   padding: const EdgeInsets.all(20),
@@ -93,14 +98,12 @@ class MainPage extends StatelessWidget {
                       date: '2019/01/10',
                       price: '5000',
                       stylist: 'M.Tanaka',
+                      )]), 
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
+            ),
+          );
+        }
+      }

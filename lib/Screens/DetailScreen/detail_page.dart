@@ -32,7 +32,7 @@ class DetailPage extends StatelessWidget {
         child: Column(
           children: <Widget>[
             const SizedBox(
-              height: 80,
+              height: 40,
             ),
             const Header(),
             Expanded(
@@ -51,6 +51,9 @@ class DetailPage extends StatelessWidget {
                     ClipRRect(
                       borderRadius: BorderRadius.circular(60),
                       child: Image.asset(args.path),
+                    ),
+                    const SizedBox(
+                      height: 20,
                     ),
                     EntryInformation(
                       date: args.date,
