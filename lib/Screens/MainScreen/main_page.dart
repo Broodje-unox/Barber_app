@@ -26,12 +26,12 @@ class MainPage extends StatelessWidget {
           decoration: const BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(60),
-              topRight: Radius.circular(60),
+              topLeft: Radius.circular(30),
+              topRight: Radius.circular(30),
             ),
           ),
                     
-            
+                // picture grid
                 child: GridView.count(
                   primary: false,
                   padding: const EdgeInsets.all(20),
